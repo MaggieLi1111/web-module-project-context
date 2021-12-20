@@ -3,7 +3,9 @@ import ProductContext from '../contexts/ProductContext';
 
 
 const Product = props => {
+	
 	const { addItem } = useContext(ProductContext);
+
 	return (
 		<div className="product">
 			<img src={props.product.image} alt={`${props.product.title} book`} />
